@@ -1,0 +1,16 @@
+{
+  "name": "gale-faqs",
+  "version": "1.0.0",
+  "description": "```\r // serve\r jekyll build\r jekyll serve\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "jekyll serve",
+    "build": "jekyll build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jekyll": "^3.0.0-beta1"
+  }
+}
