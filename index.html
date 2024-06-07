@@ -8,170 +8,350 @@
   </head>
   <body>
     <nav class="navbar sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/assets/images/gale-logo.svg" alt="Gale" />
-      <img src="/assets/images/beta.svg" alt="Beta" class="ms-2" />
-    </a>
-    <!-- Sign-in button -->
-    <a
-      href="https://gale.kore.ai/auth/login?return_to=https:%2F%2Fgale.kore.ai&product=gale"
-      id="sign-in-button"
-      class="btn btn-primary ms-auto"
-      >Log in</a
-    >
-  </div>
-</nav>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/gale-logo.svg" alt="Gale" />
+          <img src="/assets/images/beta.svg" alt="Beta" class="ms-2" />
+        </a>
+        <!-- Sign-in button -->
+        <a
+          href="https://gale.kore.ai/auth/login?return_to=https:%2F%2Fgale.kore.ai&product=gale"
+          id="sign-in-button"
+          class="btn btn-primary ms-auto"
+          >Log in</a
+        >
+      </div>
+    </nav>
 
-<div class="container faqs ga-scroll">
-  <h1>
-    <img src="/assets/images/solid.svg" alt="solid" class="me-1" />
-    Frequently Asked Questions
-  </h1>
+    <div class="container faqs ga-scroll">
+      <h1>Test 1</h1>
+      <h1>
+        <img src="/assets/images/solid.svg" alt="solid" class="me-1" />
+        Frequently Asked Questions
+      </h1>
 
-  <form class="ui-search my-3" autocomplete="off" onsubmit="return false">
-    <img src="/assets/images/search.svg" class="icon-search" />
+      <form class="ui-search my-3" autocomplete="off" onsubmit="return false">
+        <img src="/assets/images/search.svg" class="icon-search" />
 
-    <input
-      type="text"
-      class="form-control"
-      id="faqSearch"
-      placeholder="Search"
-      autocomplete="off"
-      autofocus
-    />
-    <i class="btn-close" id="clearSearchButton"></i>
-  </form>
+        <input
+          type="text"
+          class="form-control"
+          id="faqSearch"
+          placeholder="Search"
+          autocomplete="off"
+          autofocus
+        />
+        <i class="btn-close" id="clearSearchButton"></i>
+      </form>
 
-  <div class="accordion accordian-list" id="faqAccordion"><div class="accordion-item">
-  <h2 class="accordion-header" id="faq_1">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_1" aria-expanded="false" aria-controls="answer_1">
-      What is the difference between the simple vs the advance mode in the playground?
-    </button>
-  </h2>
-  <div id="answer_1" class="accordion-collapse collapse" aria-labelledby="faq_1">
-    <div class="accordion-body"><p>In the ‘Simple Mode’, users can execute a single prompt across various models, receiving one response per model at a time. This mode is straightforward and user-friendly.</p>
+      <div class="accordion accordian-list" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_1">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_1"
+              aria-expanded="false"
+              aria-controls="answer_1"
+            >
+              What is the difference between the simple vs the advance mode in
+              the playground?
+            </button>
+          </h2>
+          <div
+            id="answer_1"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_1"
+          >
+            <div class="accordion-body">
+              <p>
+                In the ‘Simple Mode’, users can execute a single prompt across
+                various models, receiving one response per model at a time. This
+                mode is straightforward and user-friendly.
+              </p>
 
-<p>On the other hand, the ‘Advanced Mode’ offers a more comprehensive approach. Users can add system prompts and few-shot examples to the prompt, enabling the model to grasp the context better. This mode is perfect for processing multiple inputs across different models simultaneously.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_2">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_2" aria-expanded="false" aria-controls="answer_2">
-      What is the function of Copy as Gen AI Node ?
-    </button>
-  </h2>
-  <div id="answer_2" class="accordion-collapse collapse" aria-labelledby="faq_2">
-    <div class="accordion-body"><p>The <em>Copy</em> button is designed to streamline the transition between the experiment and the agent. It allows you to effortlessly duplicate the entire experiment as a Gen AI node within the flow builder. This eliminates the need for manual data entry as the</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_3">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_3" aria-expanded="false" aria-controls="answer_3">
-      Is it possible to modify the prompt and generate output for a single model, if I have configured 3?
-    </button>
-  </h2>
-  <div id="answer_3" class="accordion-collapse collapse" aria-labelledby="faq_3">
-    <div class="accordion-body"><p>Currently, the <em>Generate Output</em> button triggers output generation for all models set up in the playground.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_4">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_4" aria-expanded="false" aria-controls="answer_4">
-      Is there any limit on the number of models I can add to the playground?
-    </button>
-  </h2>
-  <div id="answer_4" class="accordion-collapse collapse" aria-labelledby="faq_4">
-    <div class="accordion-body"><p>Currently, users have the capability to incorporate a maximum of three models into their experiment. The choice of models can be a mix of external models, deployed fine-tuned models, or open-source models.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_5">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_5" aria-expanded="false" aria-controls="answer_5">
-      Why am I not able to generate output in the advance mode?
-    </button>
-  </h2>
-  <div id="answer_5" class="accordion-collapse collapse" aria-labelledby="faq_5">
-    <div class="accordion-body"><p>For the advanced mode functionality to operate properly, adding a dataset is required. You will need to upload a dataset to the experiment and cross-reference any of the columns used in that dataset within the user prompt as variables.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_6">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_6" aria-expanded="false" aria-controls="answer_6">
-      How do variables work in the playground ?
-    </button>
-  </h2>
-  <div id="answer_6" class="accordion-collapse collapse" aria-labelledby="faq_6">
-    <div class="accordion-body"><p>In the advanced mode , we offer the functionality of using variables to import data from a dataset. This feature allows you to variabilize a value and transmit up to 20 inputs to the model(s) simultaneously, significantly reducing the manual effort of processing one input at a time.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_7">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_7" aria-expanded="false" aria-controls="answer_7">
-      How can I share my prompt experiments with my co-workers?
-    </button>
-  </h2>
-  <div id="answer_7" class="accordion-collapse collapse" aria-labelledby="faq_7">
-    <div class="accordion-body"><p>The feature to share your work is conveniently available through the Export option within the playground interface.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_8">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_8" aria-expanded="false" aria-controls="answer_8">
-      Why is average tokens and latency given for each configured model?
-    </button>
-  </h2>
-  <div id="answer_8" class="accordion-collapse collapse" aria-labelledby="faq_8">
-    <div class="accordion-body"><p>This is designed to enable users to evaluate the performance of the model in accordance with their specific prompts, assess its speed and efficiency, and gain an understanding of the tentative costs involved. By comparing multiple models based on these critical metrics, users can make informed decisions about which model best suits their needs.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_9">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_9" aria-expanded="false" aria-controls="answer_9">
-      In an experiment, I worked on many prompts, but I want to see the previous prompts I wrote. Is this possible?
-    </button>
-  </h2>
-  <div id="answer_9" class="accordion-collapse collapse" aria-labelledby="faq_9">
-    <div class="accordion-body"><p>Absolutely. You can easily access your previous outputs by clicking on the ‘History’ icon. This feature displays all the prompts you’ve previously generated. If desired, you can restore any of these prompts and resume your work from where you left off.</p>
-</div>
-  </div>
-</div>
-<div class="accordion-item">
-  <h2 class="accordion-header" id="faq_10">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer_10" aria-expanded="false" aria-controls="answer_10">
-      Will I lose my data if I frequently switch between the simple and the advance mode?
-    </button>
-  </h2>
-  <div id="answer_10" class="accordion-collapse collapse" aria-labelledby="faq_10">
-    <div class="accordion-body"><p>Please note, if you switch from the prompt area, the responses generated by the models will be erased. If you return to the previous mode, you will need to regenerate these responses.</p>
-</div>
-  </div>
-</div>
+              <p>
+                On the other hand, the ‘Advanced Mode’ offers a more
+                comprehensive approach. Users can add system prompts and
+                few-shot examples to the prompt, enabling the model to grasp the
+                context better. This mode is perfect for processing multiple
+                inputs across different models simultaneously.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_2"
+              aria-expanded="false"
+              aria-controls="answer_2"
+            >
+              What is the function of Copy as Gen AI Node ?
+            </button>
+          </h2>
+          <div
+            id="answer_2"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_2"
+          >
+            <div class="accordion-body">
+              <p>
+                The <em>Copy</em> button is designed to streamline the
+                transition between the experiment and the agent. It allows you
+                to effortlessly duplicate the entire experiment as a Gen AI node
+                within the flow builder. This eliminates the need for manual
+                data entry as the
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_3"
+              aria-expanded="false"
+              aria-controls="answer_3"
+            >
+              Is it possible to modify the prompt and generate output for a
+              single model, if I have configured 3?
+            </button>
+          </h2>
+          <div
+            id="answer_3"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_3"
+          >
+            <div class="accordion-body">
+              <p>
+                Currently, the <em>Generate Output</em> button triggers output
+                generation for all models set up in the playground.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_4"
+              aria-expanded="false"
+              aria-controls="answer_4"
+            >
+              Is there any limit on the number of models I can add to the
+              playground?
+            </button>
+          </h2>
+          <div
+            id="answer_4"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_4"
+          >
+            <div class="accordion-body">
+              <p>
+                Currently, users have the capability to incorporate a maximum of
+                three models into their experiment. The choice of models can be
+                a mix of external models, deployed fine-tuned models, or
+                open-source models.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_5">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_5"
+              aria-expanded="false"
+              aria-controls="answer_5"
+            >
+              Why am I not able to generate output in the advance mode?
+            </button>
+          </h2>
+          <div
+            id="answer_5"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_5"
+          >
+            <div class="accordion-body">
+              <p>
+                For the advanced mode functionality to operate properly, adding
+                a dataset is required. You will need to upload a dataset to the
+                experiment and cross-reference any of the columns used in that
+                dataset within the user prompt as variables.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_6">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_6"
+              aria-expanded="false"
+              aria-controls="answer_6"
+            >
+              How do variables work in the playground ?
+            </button>
+          </h2>
+          <div
+            id="answer_6"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_6"
+          >
+            <div class="accordion-body">
+              <p>
+                In the advanced mode , we offer the functionality of using
+                variables to import data from a dataset. This feature allows you
+                to variabilize a value and transmit up to 20 inputs to the
+                model(s) simultaneously, significantly reducing the manual
+                effort of processing one input at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_7">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_7"
+              aria-expanded="false"
+              aria-controls="answer_7"
+            >
+              How can I share my prompt experiments with my co-workers?
+            </button>
+          </h2>
+          <div
+            id="answer_7"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_7"
+          >
+            <div class="accordion-body">
+              <p>
+                The feature to share your work is conveniently available through
+                the Export option within the playground interface.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_8">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_8"
+              aria-expanded="false"
+              aria-controls="answer_8"
+            >
+              Why is average tokens and latency given for each configured model?
+            </button>
+          </h2>
+          <div
+            id="answer_8"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_8"
+          >
+            <div class="accordion-body">
+              <p>
+                This is designed to enable users to evaluate the performance of
+                the model in accordance with their specific prompts, assess its
+                speed and efficiency, and gain an understanding of the tentative
+                costs involved. By comparing multiple models based on these
+                critical metrics, users can make informed decisions about which
+                model best suits their needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_9">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_9"
+              aria-expanded="false"
+              aria-controls="answer_9"
+            >
+              In an experiment, I worked on many prompts, but I want to see the
+              previous prompts I wrote. Is this possible?
+            </button>
+          </h2>
+          <div
+            id="answer_9"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_9"
+          >
+            <div class="accordion-body">
+              <p>
+                Absolutely. You can easily access your previous outputs by
+                clicking on the ‘History’ icon. This feature displays all the
+                prompts you’ve previously generated. If desired, you can restore
+                any of these prompts and resume your work from where you left
+                off.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq_10">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#answer_10"
+              aria-expanded="false"
+              aria-controls="answer_10"
+            >
+              Will I lose my data if I frequently switch between the simple and
+              the advance mode?
+            </button>
+          </h2>
+          <div
+            id="answer_10"
+            class="accordion-collapse collapse"
+            aria-labelledby="faq_10"
+          >
+            <div class="accordion-body">
+              <p>
+                Please note, if you switch from the prompt area, the responses
+                generated by the models will be erased. If you return to the
+                previous mode, you will need to regenerate these responses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-</div>
+    <script src="/assets/js/faqs.js"></script>
 
-<script src="/assets/js/faqs.js"></script>
+    <script>
+      // Check the referrer
+      const referrer = document.referrer;
+      const signInButton = document.getElementById("sign-in-button");
 
-<script>
-  // Check the referrer
-  const referrer = document.referrer;
-  const signInButton = document.getElementById("sign-in-button");
-
-  // If the referrer is not syz.com, show the sign-in button
-  if (referrer.includes("gale")) {
-    signInButton.style.display = "none";
-  }
-</script>
-
+      // If the referrer is not syz.com, show the sign-in button
+      if (referrer.includes("gale")) {
+        signInButton.style.display = "none";
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
