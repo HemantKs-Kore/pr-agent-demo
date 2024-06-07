@@ -12,6 +12,7 @@ filterFAQs();
 
 // Function to filter FAQs based on search term
 function filterFAQs() {
+  console.log("Filter FAQS");
   const searchTerm = searchInput.value.toLowerCase();
   const faqItems = faqAccordion.querySelectorAll(".accordion-item");
 
